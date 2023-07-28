@@ -1,0 +1,9 @@
+@keyframes highlightAnimation {
+  0% {
+    background-color: #6b7280;
+  }
+
+  100% {
+    background-color: #6b7280;
+  }
+}
