@@ -7,7 +7,7 @@ interface Props {
 
 const Triangle: NextPage<Props> = ({ triangleData, highlightedCells }) => {
   return (
-    <div className="">
+    <div className="overflow-x-auto">
       {triangleData?.map((row, rowIndex) => (
         <div key={rowIndex} className="flex justify-center space-x-1 my-1">
           {row.map((number, colIndex) => {
@@ -18,7 +18,7 @@ const Triangle: NextPage<Props> = ({ triangleData, highlightedCells }) => {
               (rowIndex === 0 && colIndex === 0);
 
             const cellClass = `rounded-md p-2 text-center font-bold ${
-              isHighlighted ? "bg-green-500" : "bg-gray-500"
+              isHighlighted ? "bg-teal-400" : "bg-gray-500"
             }`;
 
             return (

@@ -1,4 +1,5 @@
 import { NextPage } from "next";
+import { useRef } from "react";
 
 interface Props {
   onUpload: (fileContent: string) => void;
@@ -21,7 +22,12 @@ const UploadButton: NextPage<Props> = ({ onUpload }) => {
 
   return (
     <div>
-      <input type="file" accept=".txt" onChange={handleUploadFile} />
+      <input
+        className="py-2 px-4 rounded-md border-2 font-semibold"
+        type="file"
+        accept=".txt"
+        onChange={handleUploadFile}
+      />
     </div>
   );
 };
