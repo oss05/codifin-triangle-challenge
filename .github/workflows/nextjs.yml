@@ -114,9 +114,9 @@ jobs:
           node-version: "16"
           cache: ${{ env.manager }}
       - name: Install dependencies
-        run: ${{ env.manager }} ${{ env.command }}
+        run: yarn
       - name: Run tests
-        run: ${{ env.runner }} test
+        run: yarn test
 
   # Deployment job
   deploy:
