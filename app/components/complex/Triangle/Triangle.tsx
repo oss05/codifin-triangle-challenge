@@ -5,7 +5,7 @@ interface Props {
   highlightedCells: [number, number][];
 }
 
-const Trinagle: NextPage<Props> = ({ triangleData, highlightedCells }) => {
+const Triangle: NextPage<Props> = ({ triangleData, highlightedCells }) => {
   return (
     <div className="">
       {triangleData?.map((row, rowIndex) => (
@@ -42,4 +42,4 @@ const Trinagle: NextPage<Props> = ({ triangleData, highlightedCells }) => {
   );
 };
 
-export default Trinagle;
+export default Triangle;
